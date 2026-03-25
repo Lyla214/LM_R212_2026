@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🧩 Défi chrono — Menu burger</title>
+  
+</head>
+<body>
+
+  <header>
+    <span class="logo">Défi</span>
+    <button class="menu-btn">☰</button>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Accueil</a></li>
+      <li><a href="#">Projets</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="consigne">
+      <h1>🧩 Défi chrono</h1>
+      <p>Faites fonctionner ce menu burger en <strong>le moins de lignes de JS possible</strong>.</p>
+      <p>Le bouton <code>☰</code> doit ouvrir/fermer le menu.<br>La touche <code>Escape</code> doit le fermer.</p>
+      <p>Le CSS est prêt : la classe <code>.is-open</code> sur le <code>&lt;nav&gt;</code> affiche le menu.</p>
+    </div>
+  </main>
+
+  <!-- Écrivez votre JS ici 👇 -->
+  <script>
+const bouton = document.querySelector('.menu-btn');
+const menu = document.querySelector('.nav');
+bouton.addEventListener('click', () => { nav.classList.toggle('is-open');
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && nav.classList.contains('is-open')) {
+    menu.classList.remove('is-open');
+    bouton.focus(); // remettre le focus sur le bouton (repère)
+  }
+});
+
+  </script>
+
+</body>
+</html>
