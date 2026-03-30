@@ -1,9 +1,0 @@
-Justification 
-•	:root >> défini les paramètres de la page par défaut (couleurs, espacements, typographie),
-•	.body { >> sert à nommer une balise sémantique de la page HTML afin de pouvoir ajouter d’autres paramètres au niveau de l’ « apparence » du site, 
-•	Justify-content = propriété CSS aligne les éléments horizontalement >> space between (espace égal entre eux), 
-•	Align-items = propriété CSS aligne éléments verticalement >> center (au centre), 
-•	Text-align (alignement du texte) >> center (au centre)
-•	Display : grid >> défini comment les éléments de la page vont être organisées (en colonnes, en tableau, en grille…)
-•	@media >> permet d’adapter les écrans à partir d’une taille définie maximale ou minimale en pixels. 
-IA non utilisée 
